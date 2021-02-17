@@ -24,4 +24,8 @@ class Artist
     Song.all.size
   end
 
+  def songs
+    @songs    
+  end
+
 end
