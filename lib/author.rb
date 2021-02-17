@@ -22,7 +22,7 @@ class Author
   end
 
   def posts
-    Pong.all.select {|post| post.author == self}
+    Post.all.select {|post| post.author == self}
   end
 
 end
