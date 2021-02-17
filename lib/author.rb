@@ -21,4 +21,8 @@ class Author
     Post.all.size
   end
 
+  def posts
+    Pong.all.select {|post| post.author == self}
+  end
+
 end
